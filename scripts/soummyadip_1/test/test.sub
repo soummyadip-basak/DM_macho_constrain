@@ -1,0 +1,10 @@
+universe   = vanilla  
+executable = /home1/soummyadip.basak/lensing/DM_macho_constrain/scripts/Soummyadip_1/test/test.py
+output     = /home1/soummyadip.basak/lensing/DM_macho_constrain/scripts/Soummyadip_1/test/test.out
+error      = /home1/soummyadip.basak/lensing/DM_macho_constrain/scripts/Soummyadip_1/test/test.err
+log        = /home1/soummyadip.basak/lensing/DM_macho_constrain/scripts/Soummyadip_1/test/test.log
+initialdir = /home1/soummyadip.basak/lensing/DM_macho_constrain/scripts/Soummyadip_1
+notification = Never
+#arguments  =  $(Process)
+on_exit_remove = (ExitBySignal == False) || ((ExitBySignal == True) && (ExitSignal != 11))
+queue 1

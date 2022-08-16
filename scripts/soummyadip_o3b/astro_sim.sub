@@ -1,0 +1,10 @@
+universe   = vanilla  
+executable = /home1/soummyadip.basak/lensing/DM_macho_constrain/scripts/soummyadip_o3b/run_machodm_astro_sim.py
+output     = /home1/soummyadip.basak/lensing/DM_macho_constrain/scripts/soummyadip_o3b/out_err_dir/astro_sim_$(Process).out
+error      = /home1/soummyadip.basak/lensing/DM_macho_constrain/scripts/soummyadip_o3b/out_err_dir/astro_sim_$(Process).err
+log        = /home1/soummyadip.basak/lensing/DM_macho_constrain/scripts/soummyadip_o3b/out_err_dir/astro_sim_$(Process).log
+initialdir = /home1/soummyadip.basak/lensing/DM_macho_constrain/scripts/soummyadip_o3b
+notification = Never
+arguments  =  $(Process)
+on_exit_remove = (ExitBySignal == False) || ((ExitBySignal == True) && (ExitSignal != 11))
+queue 20

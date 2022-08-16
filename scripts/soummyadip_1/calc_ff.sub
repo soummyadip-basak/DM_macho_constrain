@@ -1,0 +1,9 @@
+universe   = vanilla  
+executable = run_machodm_calc_ff_lw.py
+output     = ../out_err_dir/calc_ff_$(Process).out
+error      = ../out_err_dir/calc_ff_$(Process).err
+log        = ../out_err_dir/calc_ff_$(Process).log
+notification = Never
+arguments  =  $(Process)
+on_exit_remove = (ExitBySignal == False) || ((ExitBySignal == True) && (ExitSignal != 11))
+queue 780 

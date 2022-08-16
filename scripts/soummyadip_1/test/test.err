@@ -1,0 +1,4 @@
+  File "/home1/soummyadip.basak/lensing/DM_macho_constrain/scripts/Soummyadip_1/test/test.py", line 6
+    %matplotlib inline
+    ^
+SyntaxError: invalid syntax
