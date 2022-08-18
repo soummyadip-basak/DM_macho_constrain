@@ -103,10 +103,9 @@ def lens_ampl_function_geom_optics(f, M_lz, y):
     return np.sqrt(np.abs(mu_p)) - 1j*np.sqrt(np.abs(mu_m))*np.exp(1j*w*delta_Td_hat)
 
 
-ef lens_ampl_function(f, M_lz, y, intrp_hyp1f1=None):
+def lens_ampl_function(f, M_lz, y, intrp_hyp1f1=None):
     """ frequency dependent lensing magnification: hybrid using wave optics and geometric optics """
 
-#    M_lz = np.power(10,x)
     w = 8*np.pi*M_lz*lal.MTSUN_SI*f
 
     # if y > 3 geometric optics provides a good approximation 
